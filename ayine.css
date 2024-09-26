@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(41, 41, 41);
+}
+
+header {
+    background-color:lightblue;
+    padding: 1rem;
+}
+
+a {
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, p {
+    margin: 10px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.siir {
+    background-color: rgb(234, 255, 234);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tahlil {
+    background-color: rgb(201, 233, 255);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#sevgi {
+    color: white;
+}

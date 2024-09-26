@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapboz :)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="puzzle.ico">
+</head>
+<body>
+    <header>
+            <h1>YAPBOZ</h1>
+    </header>
+
+    <div class="body">
+    <section>
+        <p>Fazla parçası olan bir yapbozu yapmak çok emek ister, onu yapabilmek için de adım adım gitmek gerekir. Öncelikle yapbozun yapılabileceği doğru yer seçilmeli, kenar parçalar bulunup yapbozun çerçevesi tamamlanılmalı daha sonra parçalar renklere göre ayrılıp orta kısma kadar birleştirilmeli.
+        </p>
+        <p>Aynı insan hayatı gibi, yapbozun yapılabileceği doğru yeri seçmek insanın rahat olacağı, yaşam şekline uygun ortamı ve çevreyi seçmesi gibi.
+        </p>
+        <p>Kenar parçaları bulup çerçeveyi tamamlamak aynı insanın kendi sınırlarını belirleyip yaşamak istediği hayata yönelmesi gibi.
+        </p>
+        <p>Parçaları renklere göre ayırıp orta kısma kadar birleştirmek aynı insanın isteklerini belirleyip onları tamamlaya çalışması gibi.
+        </p>
+        <p>Bazen ise yapboz yapılırken sürekli yanlış parçalar birleştirilip sökülürse parçaların kenarları zedelenir ve yapboz tamamlandığında ortaya çıkan resim güzel gözükmeyebilir. Aynı insanın hataları gibi.
+        </p>
+        <p>Bazen de yapbozun parçası eksik olursa tamamlanmamış hissi verir, aynı insanın eksikliği gibi...
+        </p>
+    </section>
+    <div class="login-form">
+        <h2>Giriş</h2>
+        <input type="password" id="password" placeholder="Şifre giriniz">
+        <button onclick="checkPassword()">Giriş</button>
+        <div class="message" id="message"></div>
+    </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const correctPassword = ':)';
+            const enteredPassword = document.getElementById('password').value;
+            const message = document.getElementById('message');
+
+            if (enteredPassword === correctPassword) {
+                message.style.color = 'green';
+                message.textContent = 'Doğuru tahmin :))';
+                setTimeout(function() {
+                    window.location.href = 'ayine.html'; // Yönlendirilecek sayfanın adresi
+                }, 1500); // 1.5 saniye sonra yönlendirme
+            } else {
+                message.style.color = 'red';
+                message.textContent = 'Yanlış şifre :)';
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/2e4f1189a1.js" crossorigin="anonymous"></script>
+</body>
+</html>
